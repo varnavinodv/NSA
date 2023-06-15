@@ -1,0 +1,13 @@
+h=`date +%H`
+if [ $h -le 12 ]
+then
+echo gud mng
+elif [ $h -le 16 ]
+then
+echo gf aftrnoon
+elif [  $h -le 20 ]
+then
+echo gd evng
+else
+echo gd nyt
+fi

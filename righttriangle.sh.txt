@@ -1,0 +1,17 @@
+echo enter num
+read a
+echo enter num
+read b
+echo enter num
+read c
+if ((a+b >c && a+c > b && b+c >b ))
+then
+ if [ $((a*a)) -eq $((b*b + c*c)) ] || [ $((b*b)) -eq $((a*a +c*c)) ] || [ $((c*c)) -eq $((a*a + b*b)) ]
+ then
+ echo can form righttiangle
+ else
+ echo cant for righttriangle
+ fi
+else
+echo cant form triangle
+fi

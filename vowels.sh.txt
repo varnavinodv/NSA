@@ -1,0 +1,5 @@
+echo "enter a line"
+read string
+vowCount=$(echo $string | grep -o -i "[aeiou]" | wc --lines )
+echo "the given string has $vowCount vowels"
+

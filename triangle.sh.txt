@@ -1,0 +1,15 @@
+echo enter first number:
+read a
+echo enter second number:
+read b
+echo enter third number
+read c
+if [ $a -le 0 ] || [ $b -le 0 ] || [ $c -le 0 ]
+then
+echo "not sides of triangle"
+elif [ $((a+b)) -gt $c ] && [ $((b+c)) -gt $a ] && [ $((a+c)) -gt $b ]
+then
+echo "sides of triangle"
+else
+echo "cannnot be sides of triangle"
+fi
